@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>เลขเด่น 6 หลักรัฐบาล</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;600;700&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#0a0612;--bg2:#1a0f2e;--panel:#140b24;--gold:#d9b24c;--gold2:#f3dc8a;--ruby:#8c1c2c;--text:#f1e8d0;--muted:#a999c4;--line:#5a4520}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0612}}
+:root[data-theme="dark"]{--bg:#0a0612}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;color:var(--text);font-family:'Sarabun','Noto Sans Thai',Tahoma,sans-serif;background:radial-gradient(circle at 50% 0,var(--bg2),var(--bg) 60%) var(--bg);padding:20px 14px 40px}
+h1,h2,.ser{font-family:'Noto Serif Thai','Sarabun',serif}
+.wrap{max-width:760px;margin:0 auto}
+header{text-align:center;margin-bottom:22px}
+.orn{color:var(--gold);letter-spacing:.6em;font-size:14px}
+h1{margin:6px 0;font-size:clamp(26px,6vw,40px);background:linear-gradient(180deg,var(--gold2),var(--gold) 60%,#a37d22);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);font-size:14px}
+.card{background:linear-gradient(160deg,var(--panel),#0e0819);border:1px solid var(--line);border-radius:16px;padding:22px 18px;box-shadow:0 0 0 3px #0a0612,0 0 0 4px var(--line),0 12px 40px #000a}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:560px){.grid4{grid-template-columns:1fr 1fr}}
+label{display:block;color:var(--gold);font-size:14px;margin-bottom:6px;text-align:center}
+select{width:100%;padding:12px 8px;font:inherit;font-size:16px;color:var(--gold2);background:#0a0612;border:2px solid var(--gold);border-radius:10px;text-align:center;text-align-last:center}
+select:focus,input:focus{outline:none;box-shadow:0 0 0 3px #d9b24c55}
+.sec{margin:26px 0 10px;text-align:center;color:var(--gold2);font-size:18px}
+.digits{display:flex;justify-content:center;gap:8px}
+.digits input{width:clamp(40px,12vw,58px);height:clamp(52px,14vw,70px);text-align:center;font:700 28px 'Noto Serif Thai',serif;color:var(--gold2);background:#0a0612;border:3px solid var(--gold);border-radius:10px}
+.btn{display:block;width:100%;margin-top:24px;padding:14px;font:600 18px 'Sarabun',sans-serif;color:#1a0f00;background:linear-gradient(180deg,var(--gold2),var(--gold));border:0;border-radius:12px;cursor:pointer}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold);margin-top:14px}
+.err{color:#ff8a8a;text-align:center;margin-top:12px;min-height:20px;font-size:14px}
+.hidden{display:none}
+.sets{display:grid;gap:14px;margin:10px 0}
+.set{display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap}
+.set .t{color:var(--gold);width:72px;font-weight:600}
+.circ{display:flex;flex-direction:column;align-items:center;gap:4px}
+.circ small{color:var(--muted);font-size:12px}
+.ball{width:clamp(40px,11vw,54px);height:clamp(40px,11vw,54px);border-radius:50%;display:grid;place-items:center;font:700 clamp(20px,5vw,26px) 'Noto Serif Thai',serif;color:#1a0f00;background:radial-gradient(circle at 35% 30%,var(--gold2),var(--gold) 65%,#8a6a1a);box-shadow:0 0 14px #d9b24c66}
+.sumrow{text-align:center;color:var(--muted);font-size:14px;margin-bottom:6px}
+.sumrow b{color:var(--gold2);letter-spacing:.15em}
+.pyr{overflow-x:auto;padding:8px 0 14px}
+.pyr-in{width:max-content;margin:0 auto}
+.row{display:flex;justify-content:center;align-items:center;gap:3px;margin-bottom:3px;position:relative}
+.rl{position:absolute;left:0;font-size:11px;color:var(--muted);width:42px}
+.cell{width:34px;height:30px;display:grid;place-items:center;font-size:14px;border:2px solid var(--line);border-radius:5px;background:#0a0612;color:var(--text)}
+.cell.hl{border-color:var(--gold2);background:#3a2a08;color:var(--gold2);font-weight:700}
+.legend{font-size:12px;color:var(--muted);text-align:center;margin-top:4px}
+.pyr-in{padding-left:46px}
+.note{font-size:12px;color:var(--muted);text-align:center;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="orn">✦ ✦ ✦</div>
+<h1>เลขเด่น 6 หลักรัฐบาล</h1>
+<div class="sub">คำนวณจากวัน เดือน ปี และรางวัลที่ 1 ล่าสุด</div>
+</header>
+
+<section id="p1" class="card">
+<div class="grid4">
+<div><label for="dw">วัน</label><select id="dw"></select></div>
+<div><label for="dd">วันที่</label><select id="dd"></select></div>
+<div><label for="mm">เดือน</label><select id="mm"></select></div>
+<div><label for="yy">ค.ศ.</label><select id="yy"></select></div>
+</div>
+<div class="sec ser">รางวัลที่ 1 ล่าสุด</div>
+<div class="digits" id="digits"></div>
+<div class="err" id="err"></div>
+<button class="btn" id="go">คำนวณเลขเด่น</button>
+</section>
+
+<section id="p2" class="card hidden">
+<h2 class="sec ser" style="margin-top:0">ผลลัพธ์</h2>
+
+<div class="sets" id="sets"></div>
+<div class="sec ser">แผนภูมิการคำนวณ</div>
+<div class="pyr"><div class="pyr-in" id="pyr"></div></div>
+<div class="legend">ช่องสีทองคือช่องที่ใช้อ่านค่าผลลัพธ์</div>
+<button class="btn ghost" id="back">← กลับไปแก้ไขข้อมูล</button>
+<div class="note">เพื่อความบันเทิงและเป็นแนวทางเท่านั้น ไม่รับประกันผลรางวัล</div>
+</section>
+</div>
+
+<script>
+var DAYS=['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'];
+var MONTHS=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+function $(id){return document.getElementById(id)}
+function fill(sel,items,def){items.forEach(function(t,i){var o=document.createElement('option');o.value=t[0];o.textContent=t[1];sel.appendChild(o)});sel.value=def}
+fill($('dw'),DAYS.map(function(d,i){return [i,d]}),new Date().getDay());
+var dl=[];for(var i=1;i<=31;i++)dl.push([i,i]);fill($('dd'),dl,new Date().getDate());
+fill($('mm'),MONTHS.map(function(m,i){return [i+1,m]}),new Date().getMonth()+1);
+var yl=[];for(var y=1900;y<=2100;y++)yl.push([y,y]);fill($('yy'),yl,2026);
+
+var inputs=[];
+for(var k=0;k<6;k++){(function(k){
+ var e=document.createElement('input');e.type='text';e.inputMode='numeric';e.maxLength=1;e.setAttribute('aria-label','หลักที่ '+(k+1));
+ e.addEventListener('input',function(){e.value=e.value.replace(/\D/g,'');if(e.value&&k<5)inputs[k+1].focus()});
+ e.addEventListener('keydown',function(ev){if(ev.key==='Backspace'&&!e.value&&k>0)inputs[k-1].focus()});
+ e.addEventListener('paste',function(ev){var t=(ev.clipboardData.getData('text')||'').replace(/\D/g,'');if(t.length>1){ev.preventDefault();for(var j=0;j<6;j++)inputs[j].value=t[j]||'';inputs[Math.min(t.length,5)].focus()}});
+ inputs.push(e);$('digits').appendChild(e)})(k)}
+
+function red(n){while(n>9){n=String(n).split('').reduce(function(a,b){return a+ +b},0)}return n}
+
+function calc(){
+ var d=+$('dd').value,m=+$('mm').value,y=String($('yy').value),w=+$('dw').value+1;
+ var ds=String(d).padStart(2,'0'),ms=String(m).padStart(2,'0');
+ var prize=inputs.map(function(e){return +e.value});
+ var r1=[0,w,+ds[0],+ds[1],+ms[0],+ms[1],+y[0],+y[1],+y[2],+y[3]].concat(prize);
+ var rows=[r1];
+ for(var r=1;r<16;r++){var p=rows[r-1],n=[];for(var i=0;i<p.length-1;i++)n.push(red(p[i]+p[i+1]));rows.push(n)}
+ return rows;
+}
+function g(rows,r,c){return rows[r-1][c-1]}
+
+var HL=[[10,7],[2,10],[2,11],[2,12],[9,3],[2,4],[7,1],[2,5]];
+
+function show(rows){
+ 
+ var sets=$('sets');sets.innerHTML='';
+ [10,11,12].forEach(function(bc,idx){
+  var vals=[g(rows,10,7),g(rows,2,bc),g(rows,9,3),g(rows,2,4),g(rows,7,1),g(rows,2,5)];
+  var s=document.createElement('div');s.className='set';
+  var t=document.createElement('div');t.className='t ser';t.textContent='ผลลัพธ์ '+(idx+1);s.appendChild(t);
+  vals.forEach(function(v,i){var c=document.createElement('div');c.className='circ';
+   c.innerHTML='<div class="ball">'+v+'</div>';s.appendChild(c)});
+  sets.appendChild(s)});
+ var pyr=$('pyr');pyr.innerHTML='';
+ rows.forEach(function(row,ri){
+  var rd=document.createElement('div');rd.className='row';
+  var l=document.createElement('span');l.className='rl';l.textContent='แถว '+(ri+1);rd.appendChild(l);
+  row.forEach(function(v,ci){var c=document.createElement('div');c.className='cell';
+   if(HL.some(function(h){return h[0]===ri+1&&h[1]===ci+1}))c.className+=' hl';
+   c.textContent=v;rd.appendChild(c)});
+  pyr.appendChild(rd)});
+}
+
+$('go').onclick=function(){
+ var err=$('err');err.textContent='';
+ if(inputs.some(function(e){return e.value===''})){err.textContent='กรุณากรอกรางวัลที่ 1 ให้ครบ 6 หลัก';return}
+ var d=+$('dd').value,m=+$('mm').value,y=+$('yy').value;
+ if(d>new Date(y,m,0).getDate()){err.textContent='วันที่ไม่ตรงกับเดือนที่เลือก กรุณาตรวจสอบอีกครั้ง';return}
+ show(calc());
+ $('p1').classList.add('hidden');$('p2').classList.remove('hidden');window.scrollTo(0,0);
+};
+$('back').onclick=function(){$('p2').classList.add('hidden');$('p1').classList.remove('hidden');window.scrollTo(0,0)};
+</script>
+</body>
+</html>
