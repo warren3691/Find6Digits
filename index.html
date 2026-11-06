@@ -116,13 +116,13 @@ function calc(){
 }
 function g(rows,r,c){return rows[r-1][c-1]}
 
-var HL=[[10,7],[2,10],[2,11],[2,12],[9,3],[2,4],[7,1],[2,5]];
+var HL=[[9,8],[2,10],[2,11],[2,12],[9,3],[2,4],[7,1],[2,5]];
 
 function show(rows){
  
  var sets=$('sets');sets.innerHTML='';
  [10,11,12].forEach(function(bc,idx){
-  var vals=[g(rows,10,7),g(rows,2,bc),g(rows,9,3),g(rows,2,4),g(rows,7,1),g(rows,2,5)];
+  var vals=[g(rows,9,8),g(rows,2,bc),g(rows,9,3),g(rows,2,4),g(rows,7,1),g(rows,2,5)];
   var s=document.createElement('div');s.className='set';
   var t=document.createElement('div');t.className='t ser';t.textContent='ผลลัพธ์ '+(idx+1);s.appendChild(t);
   vals.forEach(function(v,i){var c=document.createElement('div');c.className='circ';
